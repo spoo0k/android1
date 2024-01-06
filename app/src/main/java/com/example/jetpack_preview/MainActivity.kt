@@ -40,6 +40,8 @@ class MainActivity : ComponentActivity() {
 
 
 
+// task manager finally page
+
 @Composable
 fun GreetingMain(modifier: Modifier = Modifier) {
     val img = painterResource(R.drawable.ic_task_completed)
@@ -66,6 +68,9 @@ fun GreetingMain(modifier: Modifier = Modifier) {
     }
 
 }
+
+
+// wiki example
 
 
 //@Composable
