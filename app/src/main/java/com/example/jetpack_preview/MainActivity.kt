@@ -148,7 +148,7 @@ fun GreetingCredits(modifier: Modifier = Modifier) {
 
 @Preview (showBackground = true)
 @Composable
-fun GreetingMain() {
+fun RectangleTask() {
     Surface(
         modifier = Modifier.fillMaxSize(),
         color = Color(0xFF4C566A)
@@ -213,60 +213,76 @@ fun CreateNode(title: String, description: String, modifier: Modifier = Modifier
 
 /// task manager finally page
 
-//@Composable
-//fun GreetingMain(modifier: Modifier = Modifier) {
-//    val img = painterResource(R.drawable.ic_task_completed)
-//    Column(
-//        modifier = modifier.fillMaxSize(),
-//        verticalArrangement = Arrangement.Center,
-//        horizontalAlignment = Alignment.CenterHorizontally
-//    )
-//    {
-//        Image(
-//            painter = img,
-//            contentDescription = null,
-//            alpha = 0.7f,
-//        )
-//        Text (
-//            text = "All tasks completed",
-//            modifier = modifier.padding(top = 24.dp, bottom = 8.dp),
-//            fontWeight = FontWeight.Bold,
-//        )
-//        Text (
-//            text = "Nice work!",
-//            fontSize = 16.sp,
-//        )
-//    }
-//}
+@Preview (showBackground = true)
+@Composable
+fun TaskManagerFinallyPage(modifier: Modifier = Modifier) {
+    Surface(
+        modifier = Modifier.fillMaxSize(),
+        color = Color(0xFF4C566A)
+    ) {
+        val img = painterResource(R.drawable.ic_task_completed)
+        Column(
+            modifier = modifier.fillMaxSize(),
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally
+        )
+        {
+            Image(
+                painter = img,
+                contentDescription = null,
+                alpha = 0.7f,
+            )
+            Text(
+                text = "All tasks completed",
+                modifier = modifier.padding(top = 24.dp, bottom = 8.dp),
+                fontWeight = FontWeight.Bold,
+                color = Color(0xFF8FBCBB),
+            )
+            Text(
+                text = "Nice work!",
+                fontSize = 16.sp,
+                color = Color(0xFF8FBCBB),
+            )
+        }
+    }
+}
 
 
 /// wiki example
 
-
-//@Composable
-//fun GreetingMain(modifier: Modifier = Modifier) {
-//    val img = painterResource(R.drawable.bg_compose_background)
-//    Column(
-//        modifier = modifier.fillMaxSize()
-//    ) {
-//        Image(
-//            painter =  img,
-//            contentDescription = null,
-//        )
-//        Text(
-//            text = stringResource(R.string.jetpack_title1),
-//            modifier = modifier.padding(16.dp),
-//            fontSize = 24.sp,
-//        )
-//        Text(
-//            text = stringResource(R.string.jetpack_preview_description1),
-//            modifier = modifier.padding(start = 16.dp, end = 16.dp),
-//            textAlign = TextAlign.Justify,
-//        )
-//        Text (
-//            text = stringResource(R.string.jetpack_description1),
-//            modifier = modifier.padding(16.dp),
-//            textAlign = TextAlign.Justify,
-//        )
-//    }
-//}
+@Preview (showBackground = true)
+@Composable
+fun WikiPage(modifier: Modifier = Modifier) {
+    Surface(
+        modifier = Modifier.fillMaxSize(),
+        color = Color(0xFF4C566A)
+    ) {
+        val img = painterResource(R.drawable.bg_compose_background)
+        Column(
+            modifier = modifier.fillMaxSize()
+        ) {
+            Image(
+                painter = img,
+                contentDescription = null,
+            )
+            Text(
+                text = stringResource(R.string.jetpack_title1),
+                modifier = modifier.padding(16.dp),
+                fontSize = 24.sp,
+                color = Color(0xFF8FBCBB),
+            )
+            Text(
+                text = stringResource(R.string.jetpack_preview_description1),
+                modifier = modifier.padding(start = 16.dp, end = 16.dp),
+                textAlign = TextAlign.Justify,
+                color = Color(0xFF8FBCBB),
+            )
+            Text(
+                text = stringResource(R.string.jetpack_description1),
+                modifier = modifier.padding(16.dp),
+                textAlign = TextAlign.Justify,
+                color = Color(0xFF8FBCBB),
+            )
+        }
+    }
+}
